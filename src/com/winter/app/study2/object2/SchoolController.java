@@ -16,7 +16,7 @@ public class SchoolController {
 		SchoolMate [] schoolMates = new SchoolMate[0];
 		boolean check = true;
 		while(check) {
-			System.out.println("1.학생정보입력 2.학생정보출력 3.프로그램종료");
+			System.out.println("1.학생정보입력 2.학생정보출력 3.학생정보검색 4.프로그램종료");
 			int select = sc.nextInt();
 			if(select == 1) {
 				schoolMates = sf.make(schoolMates);
@@ -26,6 +26,15 @@ public class SchoolController {
 				//System.out.println("출력");
 				//sv.view(schoolMate);
 				sv.viewAll(schoolMates);
+			}
+			else if(select == 3) {
+				SchoolMate box = sf.find(schoolMates);
+				if(box != null) {
+					sv.view(box);
+				}
+				else {
+					System.out.println("일치하는 학생이 없다");
+				}
 			}
 			else {
 				System.out.println("프로그램을 종료합니다.");

@@ -3,12 +3,13 @@ package com.winter.app.study2.object2;
 import java.util.Scanner;
 
 public class SchoolMateFactory {
+	Scanner sc = new Scanner(System.in);
 	
 	//make
 	//SchoolMate 객체 생성
 	//모든 정보를 입력받아서 대입
 	public SchoolMate [] make(SchoolMate [] schoolMates) {
-		Scanner sc = new Scanner(System.in);
+		
 		SchoolMate schoolMate = new SchoolMate();
 		System.out.println("이름입력");
 		schoolMate.name = sc.next();
@@ -33,6 +34,20 @@ public class SchoolMateFactory {
 		copys[schoolMates.length]=schoolMate;
 		return copys;
 	
+	}
+	
+	public SchoolMate find(SchoolMate [] schoolMates) {
+		SchoolMate box = null;
+		System.out.println("번호를 검색하시오");
+		int num = sc.nextInt();
+		for(int i=0;i<schoolMates.length;i++) {
+			if(num == schoolMates[i].num) {
+				box = schoolMates[i];
+				break;
+			}
+		}
+		
+		return box;
 	}
 
 }
