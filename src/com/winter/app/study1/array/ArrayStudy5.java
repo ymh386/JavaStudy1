@@ -8,7 +8,6 @@ public class ArrayStudy5 {
 		// 로또 번호 6 (1-45)
 		Random random = new Random();
 		int [] nums = new int [6];
-		int idx=0;
 		
 		for(int i=0;i<nums.length;i++) {
 			nums[i] = random.nextInt(45)+1;

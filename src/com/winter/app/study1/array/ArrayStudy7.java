@@ -25,6 +25,8 @@ public class ArrayStudy7 {
 		ars = new int [2][];
 		ars[0] = new int [3];
 		ars[1] = new int [2];
+		
+		// Test branch에서 작업한 내용
 	}
 
 }

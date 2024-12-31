@@ -35,21 +35,20 @@ public class ArrayStudy6 {
 		
 		//----------------------------------------------------------------------------
 		//총점 기준으로 내림차순 정렬
+		int [][] scores = new int[3][count];
+		scores[0] = kors;
+		scores[1] = maths;
+		scores[2] = totals;
 		for(int i=0;i<names.length-1;i++) {
 			for(int j=i+1;j<names.length;j++) {
 				if(totals[i]<totals[j]) {
 					int temp = totals[i];
 					totals[i] = totals[j];
 					totals[j] = temp;
-					temp = kors[i];
-					kors[i] = kors[j];
-					kors[j] = temp;
-					temp = maths[i];
-					maths[i] = maths[j];
-					maths[j] = temp;
 				}
 			}
 		}
+		
 		for(int i=0;i<count;i++) {
 			System.out.println(names[i]+" 국어점수 : "+kors[i]+" 수학점수 : "+maths[i]+" 총점 : "+totals[i]);
 		}
