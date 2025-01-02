@@ -30,11 +30,11 @@ public class Car {
 	}
 	
 	public Car(String color, String brand) {
-		this.company="kia";
-		this.brand=brand;
-		this.color=color;
-		this.wheel=4;
-		this(color, brand);
+//		this.company="kia";
+//		this.brand=brand;
+//		this.color=color;
+//		this.wheel=4;
+		this(color, brand, 4);
 	}
 	
 	
