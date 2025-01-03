@@ -9,11 +9,13 @@ public class Test {
 	public void m1() {
 		System.out.println(this.num1);
 		System.out.println(Test.num3);
+		Test.m2();
 	}
 	
 	public static void m2() {
-		System.out.println(this.num1);
+		//System.out.println(this.num1);
 		System.out.println(Test.num3);
+		//this.m1();
 	}
 
 }

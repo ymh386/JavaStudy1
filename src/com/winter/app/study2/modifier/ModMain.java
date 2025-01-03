@@ -16,6 +16,11 @@ public class ModMain {
 		System.out.println(Test.num3);
 		System.out.println(test2.num1);
 		
+		System.out.println("==================");
+		Test3 t3 = Test3.getInstance();
+		t3.getName();
+		t3.setName("");
+		
 	
 	}
 
