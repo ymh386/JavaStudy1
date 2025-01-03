@@ -1,4 +1,4 @@
-package com.winter.app.controls;
+package com.winter.app.gamecontrols;
 
 import java.util.Random;
 
